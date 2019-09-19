@@ -1,0 +1,10 @@
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\bin\Debug\Labwork1.exe.config
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\bin\Debug\Labwork1.exe
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\bin\Debug\Labwork1.pdb
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\obj\Debug\Labwork1.csprojAssemblyReference.cache
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\obj\Debug\Labwork1.Properties.Resources.resources
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\obj\Debug\Labwork1.csproj.GenerateResource.cache
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\obj\Debug\Labwork1.csproj.CoreCompileInputs.cache
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\obj\Debug\Labwork1.exe
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\obj\Debug\Labwork1.pdb
+C:\Users\Nadzeya.Pavaliayeva\Documents\GitHub\System-Analysis-and-Machine-Modeling\SystemAnalysisAndMachineModeling\Labwork1\obj\Debug\Labwork1.Main.resources
