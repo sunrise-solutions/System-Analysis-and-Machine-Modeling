@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControlDistributions = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.unChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -57,6 +57,21 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.exγxValueLabel = new System.Windows.Forms.Label();
+            this.exDxValueLabel = new System.Windows.Forms.Label();
+            this.exMxValueLabel = new System.Windows.Forms.Label();
+            this.exγxLabel = new System.Windows.Forms.Label();
+            this.exDxLabel = new System.Windows.Forms.Label();
+            this.exMxLabel = new System.Windows.Forms.Label();
+            this.exλLabel = new System.Windows.Forms.Label();
+            this.exλTextBox = new System.Windows.Forms.TextBox();
+            this.exR0Label = new System.Windows.Forms.Label();
+            this.exCoefficientALabel = new System.Windows.Forms.Label();
+            this.exMLabel = new System.Windows.Forms.Label();
+            this.exR0TextBox = new System.Windows.Forms.TextBox();
+            this.exCoefficientATextBox = new System.Windows.Forms.TextBox();
+            this.exMTextBox = new System.Windows.Forms.TextBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button3 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
@@ -64,30 +79,31 @@
             this.button5 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.exR0Label = new System.Windows.Forms.Label();
-            this.exCoefficientALabel = new System.Windows.Forms.Label();
-            this.exMLabel = new System.Windows.Forms.Label();
-            this.exR0TextBox = new System.Windows.Forms.TextBox();
-            this.exCoefficientATextBox = new System.Windows.Forms.TextBox();
-            this.exMTextBox = new System.Windows.Forms.TextBox();
-            this.exλLabel = new System.Windows.Forms.Label();
-            this.exλTextBox = new System.Windows.Forms.TextBox();
-            this.exγxValueLabel = new System.Windows.Forms.Label();
-            this.exDxValueLabel = new System.Windows.Forms.Label();
-            this.exMxValueLabel = new System.Windows.Forms.Label();
-            this.exγxLabel = new System.Windows.Forms.Label();
-            this.exDxLabel = new System.Windows.Forms.Label();
-            this.exMxLabel = new System.Windows.Forms.Label();
+            this.trR0Label = new System.Windows.Forms.Label();
+            this.trCoefficientALabel = new System.Windows.Forms.Label();
+            this.trMLabel = new System.Windows.Forms.Label();
+            this.trR0TextBox = new System.Windows.Forms.TextBox();
+            this.trCoefficientATextBox = new System.Windows.Forms.TextBox();
+            this.trMTextBox = new System.Windows.Forms.TextBox();
+            this.trBLabel = new System.Windows.Forms.Label();
+            this.trALabel = new System.Windows.Forms.Label();
+            this.trBTextBox = new System.Windows.Forms.TextBox();
+            this.trATextBox = new System.Windows.Forms.TextBox();
+            this.trγxValueLabel = new System.Windows.Forms.Label();
+            this.trDxValueLabel = new System.Windows.Forms.Label();
+            this.trMxValueLabel = new System.Windows.Forms.Label();
+            this.trγxLabel = new System.Windows.Forms.Label();
+            this.trDxLabel = new System.Windows.Forms.Label();
+            this.trMxLabel = new System.Windows.Forms.Label();
             this.tabControlDistributions.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.unChart)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlDistributions
@@ -137,16 +153,16 @@
             // 
             // unChart
             // 
-            chartArea4.Name = "ChartArea1";
-            this.unChart.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.unChart.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            this.unChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.unChart.Legends.Add(legend1);
             this.unChart.Location = new System.Drawing.Point(219, 118);
             this.unChart.Name = "unChart";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.unChart.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.unChart.Series.Add(series1);
             this.unChart.Size = new System.Drawing.Size(300, 188);
             this.unChart.TabIndex = 17;
             this.unChart.Text = "chart1";
@@ -342,163 +358,6 @@
             this.tabPage3.Text = "Экспоненциальное";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(569, 261);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(173, 36);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Построить";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 30);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(790, 342);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Гамма-распределение";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(573, 260);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(173, 36);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Построить";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.button5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 30);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(790, 342);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Треугольное";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(569, 259);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(173, 36);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Построить";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.button6);
-            this.tabPage6.Location = new System.Drawing.Point(4, 30);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(790, 342);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Симпсона";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(577, 263);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 36);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Построить";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
-            // 
-            // chart1
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(223, 109);
-            this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(300, 188);
-            this.chart1.TabIndex = 18;
-            this.chart1.Text = "exChart";
-            // 
-            // exR0Label
-            // 
-            this.exR0Label.AutoSize = true;
-            this.exR0Label.Location = new System.Drawing.Point(544, 33);
-            this.exR0Label.Name = "exR0Label";
-            this.exR0Label.Size = new System.Drawing.Size(32, 21);
-            this.exR0Label.TabIndex = 24;
-            this.exR0Label.Text = "R0";
-            // 
-            // exCoefficientALabel
-            // 
-            this.exCoefficientALabel.AutoSize = true;
-            this.exCoefficientALabel.Location = new System.Drawing.Point(281, 33);
-            this.exCoefficientALabel.Name = "exCoefficientALabel";
-            this.exCoefficientALabel.Size = new System.Drawing.Size(18, 21);
-            this.exCoefficientALabel.TabIndex = 23;
-            this.exCoefficientALabel.Text = "a";
-            // 
-            // exMLabel
-            // 
-            this.exMLabel.AutoSize = true;
-            this.exMLabel.Location = new System.Drawing.Point(39, 33);
-            this.exMLabel.Name = "exMLabel";
-            this.exMLabel.Size = new System.Drawing.Size(24, 21);
-            this.exMLabel.TabIndex = 22;
-            this.exMLabel.Text = "m";
-            // 
-            // exR0TextBox
-            // 
-            this.exR0TextBox.Location = new System.Drawing.Point(582, 25);
-            this.exR0TextBox.Name = "exR0TextBox";
-            this.exR0TextBox.Size = new System.Drawing.Size(182, 29);
-            this.exR0TextBox.TabIndex = 21;
-            // 
-            // exCoefficientATextBox
-            // 
-            this.exCoefficientATextBox.Location = new System.Drawing.Point(305, 25);
-            this.exCoefficientATextBox.Name = "exCoefficientATextBox";
-            this.exCoefficientATextBox.Size = new System.Drawing.Size(221, 29);
-            this.exCoefficientATextBox.TabIndex = 20;
-            // 
-            // exMTextBox
-            // 
-            this.exMTextBox.Location = new System.Drawing.Point(69, 25);
-            this.exMTextBox.Name = "exMTextBox";
-            this.exMTextBox.Size = new System.Drawing.Size(161, 29);
-            this.exMTextBox.TabIndex = 19;
-            // 
-            // exλLabel
-            // 
-            this.exλLabel.AutoSize = true;
-            this.exλLabel.Location = new System.Drawing.Point(45, 94);
-            this.exλLabel.Name = "exλLabel";
-            this.exλLabel.Size = new System.Drawing.Size(19, 21);
-            this.exλLabel.TabIndex = 26;
-            this.exλLabel.Text = "λ";
-            // 
-            // exλTextBox
-            // 
-            this.exλTextBox.Location = new System.Drawing.Point(69, 86);
-            this.exλTextBox.Name = "exλTextBox";
-            this.exλTextBox.Size = new System.Drawing.Size(100, 29);
-            this.exλTextBox.TabIndex = 25;
-            // 
             // exγxValueLabel
             // 
             this.exγxValueLabel.AutoSize = true;
@@ -550,6 +409,310 @@
             this.exMxLabel.TabIndex = 27;
             this.exMxLabel.Text = "Mx";
             // 
+            // exλLabel
+            // 
+            this.exλLabel.AutoSize = true;
+            this.exλLabel.Location = new System.Drawing.Point(45, 94);
+            this.exλLabel.Name = "exλLabel";
+            this.exλLabel.Size = new System.Drawing.Size(19, 21);
+            this.exλLabel.TabIndex = 26;
+            this.exλLabel.Text = "λ";
+            // 
+            // exλTextBox
+            // 
+            this.exλTextBox.Location = new System.Drawing.Point(69, 86);
+            this.exλTextBox.Name = "exλTextBox";
+            this.exλTextBox.Size = new System.Drawing.Size(100, 29);
+            this.exλTextBox.TabIndex = 25;
+            // 
+            // exR0Label
+            // 
+            this.exR0Label.AutoSize = true;
+            this.exR0Label.Location = new System.Drawing.Point(544, 33);
+            this.exR0Label.Name = "exR0Label";
+            this.exR0Label.Size = new System.Drawing.Size(32, 21);
+            this.exR0Label.TabIndex = 24;
+            this.exR0Label.Text = "R0";
+            // 
+            // exCoefficientALabel
+            // 
+            this.exCoefficientALabel.AutoSize = true;
+            this.exCoefficientALabel.Location = new System.Drawing.Point(281, 33);
+            this.exCoefficientALabel.Name = "exCoefficientALabel";
+            this.exCoefficientALabel.Size = new System.Drawing.Size(18, 21);
+            this.exCoefficientALabel.TabIndex = 23;
+            this.exCoefficientALabel.Text = "a";
+            // 
+            // exMLabel
+            // 
+            this.exMLabel.AutoSize = true;
+            this.exMLabel.Location = new System.Drawing.Point(39, 33);
+            this.exMLabel.Name = "exMLabel";
+            this.exMLabel.Size = new System.Drawing.Size(24, 21);
+            this.exMLabel.TabIndex = 22;
+            this.exMLabel.Text = "m";
+            // 
+            // exR0TextBox
+            // 
+            this.exR0TextBox.Location = new System.Drawing.Point(582, 25);
+            this.exR0TextBox.Name = "exR0TextBox";
+            this.exR0TextBox.Size = new System.Drawing.Size(182, 29);
+            this.exR0TextBox.TabIndex = 21;
+            // 
+            // exCoefficientATextBox
+            // 
+            this.exCoefficientATextBox.Location = new System.Drawing.Point(305, 25);
+            this.exCoefficientATextBox.Name = "exCoefficientATextBox";
+            this.exCoefficientATextBox.Size = new System.Drawing.Size(221, 29);
+            this.exCoefficientATextBox.TabIndex = 20;
+            // 
+            // exMTextBox
+            // 
+            this.exMTextBox.Location = new System.Drawing.Point(69, 25);
+            this.exMTextBox.Name = "exMTextBox";
+            this.exMTextBox.Size = new System.Drawing.Size(161, 29);
+            this.exMTextBox.TabIndex = 19;
+            // 
+            // chart1
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(223, 109);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(300, 188);
+            this.chart1.TabIndex = 18;
+            this.chart1.Text = "exChart";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(569, 261);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(173, 36);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Построить";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 30);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(790, 342);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Гамма-распределение";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(573, 260);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(173, 36);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Построить";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.trγxValueLabel);
+            this.tabPage5.Controls.Add(this.trDxValueLabel);
+            this.tabPage5.Controls.Add(this.trMxValueLabel);
+            this.tabPage5.Controls.Add(this.trγxLabel);
+            this.tabPage5.Controls.Add(this.trDxLabel);
+            this.tabPage5.Controls.Add(this.trMxLabel);
+            this.tabPage5.Controls.Add(this.trBLabel);
+            this.tabPage5.Controls.Add(this.trALabel);
+            this.tabPage5.Controls.Add(this.trBTextBox);
+            this.tabPage5.Controls.Add(this.trATextBox);
+            this.tabPage5.Controls.Add(this.trR0Label);
+            this.tabPage5.Controls.Add(this.trCoefficientALabel);
+            this.tabPage5.Controls.Add(this.trMLabel);
+            this.tabPage5.Controls.Add(this.trR0TextBox);
+            this.tabPage5.Controls.Add(this.trCoefficientATextBox);
+            this.tabPage5.Controls.Add(this.trMTextBox);
+            this.tabPage5.Controls.Add(this.button5);
+            this.tabPage5.Location = new System.Drawing.Point(4, 30);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(790, 342);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Треугольное";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(569, 259);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(173, 36);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Построить";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.button6);
+            this.tabPage6.Location = new System.Drawing.Point(4, 30);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(790, 342);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Симпсона";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(577, 263);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(173, 36);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Построить";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
+            // trR0Label
+            // 
+            this.trR0Label.AutoSize = true;
+            this.trR0Label.Location = new System.Drawing.Point(536, 28);
+            this.trR0Label.Name = "trR0Label";
+            this.trR0Label.Size = new System.Drawing.Size(32, 21);
+            this.trR0Label.TabIndex = 30;
+            this.trR0Label.Text = "R0";
+            // 
+            // trCoefficientALabel
+            // 
+            this.trCoefficientALabel.AutoSize = true;
+            this.trCoefficientALabel.Location = new System.Drawing.Point(273, 28);
+            this.trCoefficientALabel.Name = "trCoefficientALabel";
+            this.trCoefficientALabel.Size = new System.Drawing.Size(18, 21);
+            this.trCoefficientALabel.TabIndex = 29;
+            this.trCoefficientALabel.Text = "a";
+            // 
+            // trMLabel
+            // 
+            this.trMLabel.AutoSize = true;
+            this.trMLabel.Location = new System.Drawing.Point(31, 28);
+            this.trMLabel.Name = "trMLabel";
+            this.trMLabel.Size = new System.Drawing.Size(24, 21);
+            this.trMLabel.TabIndex = 28;
+            this.trMLabel.Text = "m";
+            // 
+            // trR0TextBox
+            // 
+            this.trR0TextBox.Location = new System.Drawing.Point(574, 20);
+            this.trR0TextBox.Name = "trR0TextBox";
+            this.trR0TextBox.Size = new System.Drawing.Size(182, 29);
+            this.trR0TextBox.TabIndex = 27;
+            // 
+            // trCoefficientATextBox
+            // 
+            this.trCoefficientATextBox.Location = new System.Drawing.Point(297, 20);
+            this.trCoefficientATextBox.Name = "trCoefficientATextBox";
+            this.trCoefficientATextBox.Size = new System.Drawing.Size(221, 29);
+            this.trCoefficientATextBox.TabIndex = 26;
+            // 
+            // trMTextBox
+            // 
+            this.trMTextBox.Location = new System.Drawing.Point(61, 20);
+            this.trMTextBox.Name = "trMTextBox";
+            this.trMTextBox.Size = new System.Drawing.Size(161, 29);
+            this.trMTextBox.TabIndex = 25;
+            // 
+            // trBLabel
+            // 
+            this.trBLabel.AutoSize = true;
+            this.trBLabel.Location = new System.Drawing.Point(37, 142);
+            this.trBLabel.Name = "trBLabel";
+            this.trBLabel.Size = new System.Drawing.Size(20, 21);
+            this.trBLabel.TabIndex = 34;
+            this.trBLabel.Text = "b";
+            // 
+            // trALabel
+            // 
+            this.trALabel.AutoSize = true;
+            this.trALabel.Location = new System.Drawing.Point(37, 87);
+            this.trALabel.Name = "trALabel";
+            this.trALabel.Size = new System.Drawing.Size(18, 21);
+            this.trALabel.TabIndex = 33;
+            this.trALabel.Text = "a";
+            // 
+            // trBTextBox
+            // 
+            this.trBTextBox.Location = new System.Drawing.Point(61, 134);
+            this.trBTextBox.Name = "trBTextBox";
+            this.trBTextBox.Size = new System.Drawing.Size(100, 29);
+            this.trBTextBox.TabIndex = 32;
+            // 
+            // trATextBox
+            // 
+            this.trATextBox.Location = new System.Drawing.Point(61, 79);
+            this.trATextBox.Name = "trATextBox";
+            this.trATextBox.Size = new System.Drawing.Size(100, 29);
+            this.trATextBox.TabIndex = 31;
+            // 
+            // trγxValueLabel
+            // 
+            this.trγxValueLabel.AutoSize = true;
+            this.trγxValueLabel.Location = new System.Drawing.Point(126, 291);
+            this.trγxValueLabel.Name = "trγxValueLabel";
+            this.trγxValueLabel.Size = new System.Drawing.Size(0, 21);
+            this.trγxValueLabel.TabIndex = 40;
+            // 
+            // trDxValueLabel
+            // 
+            this.trDxValueLabel.AutoSize = true;
+            this.trDxValueLabel.Location = new System.Drawing.Point(126, 246);
+            this.trDxValueLabel.Name = "trDxValueLabel";
+            this.trDxValueLabel.Size = new System.Drawing.Size(0, 21);
+            this.trDxValueLabel.TabIndex = 39;
+            // 
+            // trMxValueLabel
+            // 
+            this.trMxValueLabel.AutoSize = true;
+            this.trMxValueLabel.Location = new System.Drawing.Point(126, 198);
+            this.trMxValueLabel.Name = "trMxValueLabel";
+            this.trMxValueLabel.Size = new System.Drawing.Size(0, 21);
+            this.trMxValueLabel.TabIndex = 38;
+            // 
+            // trγxLabel
+            // 
+            this.trγxLabel.AutoSize = true;
+            this.trγxLabel.Location = new System.Drawing.Point(37, 291);
+            this.trγxLabel.Name = "trγxLabel";
+            this.trγxLabel.Size = new System.Drawing.Size(27, 21);
+            this.trγxLabel.TabIndex = 37;
+            this.trγxLabel.Text = "γx";
+            // 
+            // trDxLabel
+            // 
+            this.trDxLabel.AutoSize = true;
+            this.trDxLabel.Location = new System.Drawing.Point(37, 246);
+            this.trDxLabel.Name = "trDxLabel";
+            this.trDxLabel.Size = new System.Drawing.Size(32, 21);
+            this.trDxLabel.TabIndex = 36;
+            this.trDxLabel.Text = "Dx";
+            // 
+            // trMxLabel
+            // 
+            this.trMxLabel.AutoSize = true;
+            this.trMxLabel.Location = new System.Drawing.Point(37, 198);
+            this.trMxLabel.Name = "trMxLabel";
+            this.trMxLabel.Size = new System.Drawing.Size(35, 21);
+            this.trMxLabel.TabIndex = 35;
+            this.trMxLabel.Text = "Mx";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -567,10 +730,11 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -622,6 +786,22 @@
         private System.Windows.Forms.Label exMxLabel;
         private System.Windows.Forms.Label exλLabel;
         private System.Windows.Forms.TextBox exλTextBox;
+        private System.Windows.Forms.Label trγxValueLabel;
+        private System.Windows.Forms.Label trDxValueLabel;
+        private System.Windows.Forms.Label trMxValueLabel;
+        private System.Windows.Forms.Label trγxLabel;
+        private System.Windows.Forms.Label trDxLabel;
+        private System.Windows.Forms.Label trMxLabel;
+        private System.Windows.Forms.Label trBLabel;
+        private System.Windows.Forms.Label trALabel;
+        private System.Windows.Forms.TextBox trBTextBox;
+        private System.Windows.Forms.TextBox trATextBox;
+        private System.Windows.Forms.Label trR0Label;
+        private System.Windows.Forms.Label trCoefficientALabel;
+        private System.Windows.Forms.Label trMLabel;
+        private System.Windows.Forms.TextBox trR0TextBox;
+        private System.Windows.Forms.TextBox trCoefficientATextBox;
+        private System.Windows.Forms.TextBox trMTextBox;
     }
 }
 
