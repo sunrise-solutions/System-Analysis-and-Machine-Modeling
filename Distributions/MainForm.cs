@@ -12,6 +12,9 @@ namespace Distributions
 {
     public partial class MainForm : Form
     {
+        const int N = 100000;
+        const int countOfIntervals = 20;
+
         public MainForm()
         {
             InitializeComponent();
