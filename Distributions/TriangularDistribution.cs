@@ -27,16 +27,14 @@ namespace Distributions
             double b = double.Parse(trBTextBox.Text);
             sequence = Distribution.Triangular(generator.GetNext().Take(N), a, b);
 
-            CalculateTriangularDistributionEstimates(a, b);
+            CalculateTriangularDistributionEstimates(sequence, a, b);
         }
 
-        private void CalculateTriangularDistributionEstimates(double a, double b)
+        private void CalculateTriangularDistributionEstimates(List<double> sequence, double a, double b)
         {
-            // !!! Rewrite
-            double Mx = (a + b) / 2;
-            double Dx = Math.Pow(b - a, 2) / 24;
-            double γx = Math.Sqrt(Dx);
-
+            double Mx, Dx, γx;
+            CalculateDistributionEstimates(sequence, out Mx, out Dx, out γx);
+            
             trMxValueLabel.Text = Math.Round(Mx, 5).ToString();
             trDxValueLabel.Text = Math.Round(Dx, 4).ToString();
             trγxValueLabel.Text = Math.Round(γx, 4).ToString();

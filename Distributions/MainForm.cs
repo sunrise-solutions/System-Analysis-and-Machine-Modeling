@@ -19,5 +19,23 @@ namespace Distributions
         {
             InitializeComponent();
         }
+
+        private void CalculateDistributionEstimates(List<double> xList, out double Mx, out double Dx, out double γx)
+        {
+            double sum = 0, sumD = 0;
+
+            foreach (double x in xList)
+            {
+                sum += x;
+            }
+            Mx = sum / N;
+
+            foreach (double x in xList)
+            {
+                sumD += (x - Mx) * (x - Mx);
+            }
+            Dx = sumD / N;
+            γx = Math.Sqrt(Dx);
+        }
     }
 }
