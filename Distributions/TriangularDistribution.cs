@@ -11,6 +11,11 @@ namespace Distributions
     {
         private void Button5_Click(object sender, EventArgs e)
         {
+            if (!ValueChecker.IsValid(trMTextBox.Text) || !ValueChecker.IsValid(trCoefficientATextBox.Text) || !ValueChecker.IsValid(trR0TextBox.Text))
+            {
+                MessageBox.Show("All the values should be positive integers!");
+            }
+
             int m = Convert.ToInt32(trMTextBox.Text);
             int coefficientA = Convert.ToInt32(trCoefficientATextBox.Text);
             int R0 = Convert.ToInt32(trR0TextBox.Text);

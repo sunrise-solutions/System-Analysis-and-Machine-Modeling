@@ -20,19 +20,19 @@ namespace Distributions
             return list;
         }
 
-        public static List<double> Exponential(IEnumerable<double> values, double lambda)
+        public static List<double> Exponential(IEnumerable<double> values, double λ)
         {
             List<double> list = new List<double>();
 
             foreach (double R in values)
             {
-                list.Add(-1 * (Math.Log(R)) / lambda);
+                list.Add(-1 * Math.Log(R) / λ);
             }
 
             return list;
         }
 
-        public static List<double> Triangle(IEnumerable<double> values, double a, double b)
+        public static List<double> Triangular(IEnumerable<double> values, double a, double b)
         {
             List<double> list = new List<double>();
             double[] array = values.ToArray();

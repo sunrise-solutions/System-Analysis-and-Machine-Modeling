@@ -9,6 +9,11 @@ namespace Distributions
     {
         private void Button3_Click(object sender, EventArgs e)
         {
+            if (!ValueChecker.IsValid(exMTextBox.Text) || !ValueChecker.IsValid(exCoefficientATextBox.Text) || !ValueChecker.IsValid(exR0TextBox.Text))
+            {
+                MessageBox.Show("All the values should be positive integers!");
+            }
+
             int m = Convert.ToInt32(exMTextBox.Text);
             int coefficientA = Convert.ToInt32(exCoefficientATextBox.Text);
             int R0 = Convert.ToInt32(exR0TextBox.Text);

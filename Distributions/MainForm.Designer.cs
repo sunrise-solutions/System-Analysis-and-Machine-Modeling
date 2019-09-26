@@ -34,6 +34,9 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControlDistributions = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.unChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -71,7 +74,7 @@
             this.exR0TextBox = new System.Windows.Forms.TextBox();
             this.exCoefficientATextBox = new System.Windows.Forms.TextBox();
             this.exMTextBox = new System.Windows.Forms.TextBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.exChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button3 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
@@ -95,15 +98,17 @@
             this.trγxLabel = new System.Windows.Forms.Label();
             this.trDxLabel = new System.Windows.Forms.Label();
             this.trMxLabel = new System.Windows.Forms.Label();
+            this.trChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControlDistributions.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.unChart)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exChart)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trChart)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlDistributions
@@ -348,7 +353,7 @@
             this.tabPage3.Controls.Add(this.exR0TextBox);
             this.tabPage3.Controls.Add(this.exCoefficientATextBox);
             this.tabPage3.Controls.Add(this.exMTextBox);
-            this.tabPage3.Controls.Add(this.chart1);
+            this.tabPage3.Controls.Add(this.exChart);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Location = new System.Drawing.Point(4, 30);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
@@ -473,21 +478,20 @@
             this.exMTextBox.Size = new System.Drawing.Size(161, 29);
             this.exMTextBox.TabIndex = 19;
             // 
-            // chart1
+            // exChart
             // 
             chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            this.exChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(223, 109);
-            this.chart1.Name = "chart1";
+            this.exChart.Legends.Add(legend2);
+            this.exChart.Location = new System.Drawing.Point(223, 109);
+            this.exChart.Name = "exChart";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(300, 188);
-            this.chart1.TabIndex = 18;
-            this.chart1.Text = "exChart";
+            this.exChart.Series.Add(series2);
+            this.exChart.Size = new System.Drawing.Size(300, 188);
+            this.exChart.TabIndex = 18;
             // 
             // button3
             // 
@@ -524,6 +528,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.trChart);
             this.tabPage5.Controls.Add(this.trγxValueLabel);
             this.tabPage5.Controls.Add(this.trDxValueLabel);
             this.tabPage5.Controls.Add(this.trMxValueLabel);
@@ -713,6 +718,21 @@
             this.trMxLabel.TabIndex = 35;
             this.trMxLabel.Text = "Mx";
             // 
+            // trChart
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.trChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.trChart.Legends.Add(legend3);
+            this.trChart.Location = new System.Drawing.Point(231, 107);
+            this.trChart.Name = "trChart";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.trChart.Series.Add(series3);
+            this.trChart.Size = new System.Drawing.Size(300, 188);
+            this.trChart.TabIndex = 41;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -730,11 +750,12 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exChart)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.trChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -777,7 +798,7 @@
         private System.Windows.Forms.TextBox exR0TextBox;
         private System.Windows.Forms.TextBox exCoefficientATextBox;
         private System.Windows.Forms.TextBox exMTextBox;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart exChart;
         private System.Windows.Forms.Label exγxValueLabel;
         private System.Windows.Forms.Label exDxValueLabel;
         private System.Windows.Forms.Label exMxValueLabel;
@@ -802,6 +823,7 @@
         private System.Windows.Forms.TextBox trR0TextBox;
         private System.Windows.Forms.TextBox trCoefficientATextBox;
         private System.Windows.Forms.TextBox trMTextBox;
+        private System.Windows.Forms.DataVisualization.Charting.Chart trChart;
     }
 }
 
