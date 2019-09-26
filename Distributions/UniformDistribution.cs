@@ -12,7 +12,8 @@ namespace Distributions
     {
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            button1.Text = "I'm clicked!";
+            button1.BackColor = Color.Aqua;
         }
     }
 }
