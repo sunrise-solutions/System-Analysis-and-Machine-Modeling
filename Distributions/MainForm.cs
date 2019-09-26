@@ -20,17 +20,17 @@ namespace Distributions
             InitializeComponent();
         }
 
-        private void CalculateDistributionEstimates(List<double> xList, out double Mx, out double Dx, out double γx)
+        private void CalculateDistributionEstimates(List<double> sequence, out double Mx, out double Dx, out double γx)
         {
             double sum = 0, sumD = 0;
 
-            foreach (double x in xList)
+            foreach (double x in sequence)
             {
                 sum += x;
             }
             Mx = sum / N;
 
-            foreach (double x in xList)
+            foreach (double x in sequence)
             {
                 sumD += (x - Mx) * (x - Mx);
             }
